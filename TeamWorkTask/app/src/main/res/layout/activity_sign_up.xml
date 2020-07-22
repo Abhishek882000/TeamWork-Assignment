@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/linLayoutMain"
+    android:background="@drawable/background"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:elevation="9dp"
+            app:cardElevation="9dp"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+
+                <EditText
+                    android:textColorHint="@android:color/black"
+                    android:id="@+id/emailRegistration"
+                    android:layout_margin="10dp"
+                    android:hint="Email"
+                    android:background="@drawable/edittext_background"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+
+                <EditText
+                    android:textColorHint="@android:color/black"
+                    android:id="@+id/nameRegistration"
+                    android:layout_margin="10dp"
+                    android:hint="Name"
+                    android:background="@drawable/edittext_background"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/passwordRegistration"
+                    android:layout_margin="10dp"
+                    android:hint="Password"
+                    android:padding="8dp"
+                    android:textColorHint="@android:color/black"
+                    android:background="@drawable/edittext_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/confirmPasswordRegistration"
+                    android:layout_margin="10dp"
+                    android:hint="Confirm Password"
+                    android:padding="8dp"
+                    android:textColorHint="@android:color/black"
+                    android:background="@drawable/edittext_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+
+                <Button
+                    android:textAllCaps="true"
+                    android:id="@+id/btn_registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="sign up"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button_background"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/login_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Already Have An Account?Sign In"
+                    android:gravity="center"
+                    android:textAllCaps="false" />
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>
